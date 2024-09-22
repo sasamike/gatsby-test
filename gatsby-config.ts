@@ -60,6 +60,7 @@ const config: GatsbyConfig = {
       },
     },
   ].filter(Boolean) as Array<PluginRef>,
+  pathPrefix: '/gatsby-test',
 }
 
 export default config
