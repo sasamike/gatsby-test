@@ -1,15 +1,15 @@
-// /** @jsx jsx */
-// import { jsx } from "theme-ui"
-// import Divider from "../elements/divider"
-// import Inner from "../elements/inner"
-// import Content from "../elements/content"
-// import Svg from "./svg"
-// import { UpDown, UpDownWide } from "../styles/animations"
-// import Intro from "../sections/intro.mdx"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+import Divider from "../elements/divider"
+import Inner from "../elements/inner"
+import Content from "../elements/content"
+import Svg from "./svg"
+import { UpDown, UpDownWide } from "../styles/animations"
+import Intro from "../sections/intro.mdx"
 
-// const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
-//   <div>
-//     <Divider speed={0.2} offset={offset} factor={factor}>
+const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+  <div>
+    <Divider speed={0.2} offset={offset} factor={factor}>
 //       <UpDown>
 //         <Svg icon="triangle" hiddenMobile width={56} stroke color="icon_orange" left="10%" top="20%" />
 //         <Svg icon="hexa" width={48} stroke color="icon_red" left="60%" top="70%" />
@@ -36,13 +36,13 @@
 //       <Svg icon="box" width={12} color="icon_darkest" left="40%" top="30%" />
 //       <Svg icon="hexa" width={16} stroke color="icon_darker" left="10%" top="50%" />
 //       <Svg icon="hexa" width={8} stroke color="icon_darker" left="80%" top="70%" />
-//     </Divider>
-//     <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset} factor={factor}>
-//       <Inner>
-//         <Intro />
-//       </Inner>
-//     </Content>
-//   </div>
-// )
+    </Divider>
+    <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset} factor={factor}>
+      <Inner>
+        <Intro />
+      </Inner>
+    </Content>
+  </div>
+)
 
-// export default Hero
+export default Hero
